@@ -1,5 +1,7 @@
 "use client";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -26,7 +28,7 @@ function App() {
   const [password, setPassword] = useState('');
 
   useEffect(() => {
-    client.get("/user/user")
+    client.get("/api/user")
     .then(function(res) {
       setCurrentUser(true);
     })
@@ -48,7 +50,7 @@ function App() {
   function submitRegistration(e) {
     e.preventDefault();
     client.post(
-      "/user/register",
+      "/api/register",
       {
         email: email,
         username: username,
@@ -56,7 +58,7 @@ function App() {
       }
     ).then(function(res) {
       client.post(
-        "/user/login",
+        "/api/login",
         {
           email: email,
           password: password
@@ -70,7 +72,7 @@ function App() {
   function submitLogin(e) {
     e.preventDefault();
     client.post(
-      "/user/login",
+      "/api/login",
       {
         email: email,
         password: password
@@ -83,7 +85,7 @@ function App() {
   function submitLogout(e) {
     e.preventDefault();
     client.post(
-      "/user/logout",
+      "/api/logout",
       {withCredentials: true}
     ).then(function(res) {
       setCurrentUser(false);
