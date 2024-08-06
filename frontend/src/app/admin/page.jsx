@@ -1,13 +1,10 @@
-import Header from "./components/header/header"
-import Footer from "./components/footer/footer"
-import Navbar from "./components/navbar/navbar"
-import "./style.css"
-import "./globals.css"
+import Header from "../components/header/header"
+import Footer from "../components/footer/footer"
+
 export default function Home() {
   return (
     <div>
       <Header></Header>
-      <Navbar></Navbar>
       <main className="body">
         <div className="title">
           <h1>Secretaría de Movilidad y Transporte</h1>
