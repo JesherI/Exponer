@@ -28,6 +28,11 @@ class AppUser(AbstractBaseUser, PermissionsMixin):
 	user_id = models.AutoField(primary_key=True)
 	email = models.EmailField(max_length=50, unique=True)
 	username = models.CharField(max_length=50)
+	first_name = models.CharField(max_length=50, null=True)
+	paternal_last_name = models.CharField(max_length=50, null=True)
+	maternal_last_name = models.CharField(max_length=50, null=True)
+	phone_number = models.CharField(max_length=15, blank=True, null=True)
+	curp = models.CharField(max_length=18, unique=True, null=True)
 	USERNAME_FIELD = 'email'
 	REQUIRED_FIELDS = ['username']
 	objects = AppUserManager()

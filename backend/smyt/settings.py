@@ -78,6 +78,13 @@ TEMPLATES = [
     },
 ]
 
+CORS_ALLOW_CREDENTIALS = True
+
+SESSION_COOKIE_SAMESITE = 'None'  
+SESSION_COOKIE_SECURE = True      
+CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SECURE = True
+
 WSGI_APPLICATION = 'smyt.wsgi.application'
 
 
@@ -127,7 +134,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-mx'
 
-TIME_ZONE = 'GMT-6'
+TIME_ZONE = 'America/Mexico_City'
 
 USE_I18N = True
 
