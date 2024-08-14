@@ -1,81 +1,4 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .Tipos {
-    text-align: left;
-    color: rgb(102, 16, 109);
-    margin-bottom: 20px;
-  }
-  
-  .box-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-  }
-  
-  .divider {
-    height: 100%; 
-  }
-  
-  .image-boxes {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-  }
-  
-  .box {
-    text-align: left;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    background-color:rgba(193, 155, 212, 0.466);
-    font-size: 12px;
-    
-  }
-  
-  .text-box {
-    text-align: center;
-    padding: 5px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    background-color: #e7c8e576;
-    font-size: 11px;
-    width: 130px;
-    height: 30px;
-    margin-top: 30px;
-  
-  }
-  
-  .image-boxes .box img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .box p {
-    font-size: 15px;
-    color: #090009;
-  }
-  
-  .linea{
-    height: 350px;
-    width: 10px;
-    background-color: rgb(126, 42, 125);
-  }
-  
-  .Lapiz{
-    margin-top: -30px;
-    margin-left: 150px;
-  
-  }
-  
-  .title {
+   .title {
     width: 100%;
     display: flex;
     justify-content: center; 
@@ -101,4 +24,42 @@ button{
   border-radius: 10px;
   color: white;
   margin: 30px;
+}
+
+.licences-container{
+  height: auto;
+  display: flex;
+  text-align: center;
+}
+
+.licences-list{
+  background-color: #ffffff;
+  height: 300px;
+  width: 20%;
+  border-radius: 15px;
+  box-shadow: 5px 10px 10px #000000b4;
+  display: flex;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.licence-letter{
+  background-color: #59237E ;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.title1{
+  text-align: center;
+  font-size: 40px;
+  color:withe;
 }
